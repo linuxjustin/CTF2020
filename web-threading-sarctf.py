@@ -6,7 +6,7 @@ import re
 lock = threading.Lock()
 ctr = itertools.count(260000)
 co=""
-def smash():
+def attack():
 
 	#for x in range(260000,280000):
 	while True:
@@ -35,7 +35,7 @@ def smash():
 
 threads = []
 for i in range(1000):
-        t = threading.Thread(target=smash)
+        t = threading.Thread(target=attack)
         t.daemon = True
         t.start()
         threads.append(t)
