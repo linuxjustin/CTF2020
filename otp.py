@@ -1,0 +1,5 @@
+#One Trick Pony
+from pwn import xor
+c="\x06\x02\x1b\x1bO\x1a\x1a*=/\x12\x02ZZ\x196\x10Y\x1c\x1b6\x02Z\x10\\6\\Z\n\x1bZ^6]\x07\r6\rY\x07^6\x1bZ\x1c\\Z6^\x01Z\x04H\x14\n\x08\x1a\x1d\x06\x1b\x1a*=/\x12\x02ZZ\x196\x10Y\x1c\x1b6\x02Z\x10\\6\\Z\n\x1bZ^6]\x07\r6\rY\x07^6\x1b"
+key="echo hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+print xor(c,key)
